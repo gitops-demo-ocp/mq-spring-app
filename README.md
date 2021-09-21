@@ -15,7 +15,7 @@
 </p>
 
 
-# MQ Client Java Spring Boot microservice
+# MQ Client Java Spring Boot microservices
 
 Sample MQ Client Java Spring Boot application. It contains no default application code, but comes with standard best practices, including a health check and application metric monitoring.
 More

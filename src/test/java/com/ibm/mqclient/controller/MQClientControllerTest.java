@@ -44,7 +44,7 @@ public class MQClientControllerTest {
     @DisplayName("send hello world should return 200 status")
     public void when_send_hello_world_is_called_should_return_200_status() throws Exception {
 
-    	String helloWorld = "Hello World";
+    	String helloWorld = "Hello world";
     	when(mqServiceMock.sendHelloWorld()).thenReturn(helloWorld);
         mockMvc.perform(get("/api/send-hello-world"))
                 .andExpect(status().isOk())

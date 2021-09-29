@@ -55,7 +55,7 @@ public class MQClientControllerTest {
     @DisplayName("receiving a message should return 200 status")
     public void when_receiving_a_message_should_return_200_status() throws Exception {
 
-    	String mockReceiveMessage = "Hello world from mock!";
+    	String mockReceiveMessage = "Hello world from mock!!";
     	when(mqServiceMock.receiveMessage()).thenReturn(mockReceiveMessage);
         mockMvc.perform(get("/api/recv"))
                 .andExpect(status().isOk())
